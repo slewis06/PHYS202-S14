@@ -1,9 +1,8 @@
 
-%pylab inline
 import numpy as np
 import matplotlib.pyplot as plt
 
-def twoPtForwardDiff(x,y):
+def twoforward(x,y):
     """
     Finds the slope of an array of values from the first to the
     second to last entry. The slope of the second
@@ -14,7 +13,7 @@ def twoPtForwardDiff(x,y):
     dydx[-1] = (y[-1] - y[-2])/(x[-1] - x[-2])
     return dydx
 
-def twoPtCenteredDiff(x,y):
+def twocentered(x,y):
     """
     The slope of an array of values is calculated by taking the difference
     of two points adjacent to the point in question.
@@ -27,7 +26,7 @@ def twoPtCenteredDiff(x,y):
     dydx[-1] = (y[-1] - y[-2])/(x[-1] - x[-2])
     return dydx
 
-def fourPtCenteredDiff(x,y):
+def fourcentered(x,y):
     """
     Takes a point in an array (that isnt the first, second, second-to-last, or last) 
     and computes the slope of the function at that point by subtracting values from the 
