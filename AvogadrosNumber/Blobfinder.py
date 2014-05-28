@@ -3,8 +3,8 @@ class Blob():
     def __init__(self):
         # construct an empty blob
         self.pixels = []
-    def __str__(self):
-        return "blob mass = %d" % (self.mass())
+    #def __str__(self):
+        #return "blob mass = %d" % (self.mass())
     def add(self, i, j):
         #add a pixel (i, j) to the blob
         self.pixels.append((i,j))
