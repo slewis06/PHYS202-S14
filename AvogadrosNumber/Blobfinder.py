@@ -110,15 +110,14 @@ def countbeads(P,lst):
     LstOfBigBlobs = []
     for b in lst:
         x = b.mass()
-        print x
         if x >= P:
-            LstOfBigBlobs.append(x)
+            LstOfBigBlobs.append(b)
     return len(LstOfBigBlobs)
 
 def getbeads(P,lst):
     LstOfBigBlobs = []
-    for b in LstOfBlobs:
+    for b in lst:
         x = b.mass()
         if x >= P:
-            LstOfBigBlobs.append(x)
+            LstOfBigBlobs.append(b)
     return LstOfBigBlobs
