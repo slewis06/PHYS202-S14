@@ -50,7 +50,7 @@ def monochrome(picture, threshold):
     for x in range(xsize):
         for y in range(ysize):
             r,g,b = temp[x,y]
-            if r+g+b >= threshold: 
+            if r+g+b <= threshold: 
                 temp[x,y] = black
             else:
                 temp[x,y] = white
